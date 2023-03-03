@@ -57,9 +57,12 @@ class TestF1Results(TestCase):
             10. (United Kingdom) Williams-Mercedes: 8 Points""")
         )
 
+
+class TestAssignPointsForRace(TestCase):
+
     def test_assign_points_for_race(self):
        points_for_race = assign_points_for_race(UNITED_STATES_2022)
-
+       self.assertEqual(points_for_race, {})
 
 class TestGetPointsForFinishingPosition(TestCase):
 

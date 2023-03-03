@@ -7,6 +7,7 @@ def formula_1_race_results(season_data: Mapping) -> str:
     return 'We are all winners'
 
 def assign_points_for_race(race):
+    [racer for racer in race['result']]
     return {}
 
 def get_points_for_finishing_position(finishing_position):
