@@ -1,5 +1,6 @@
 TEAMS_2022 = [
     {'team': 'Mercedes',
+     'country': 'DE',
      'drivers': [
          {
              'name': 'Lewis Hamilton',
@@ -14,6 +15,7 @@ TEAMS_2022 = [
      ]
      },
     {'team': 'Red Bull',
+     'country': 'AT',
      'drivers': [
          {
              'name': 'Max Verstappen',
@@ -21,13 +23,14 @@ TEAMS_2022 = [
              'country': 'NL'
          },
          {
-             'name': 'Sergio Perez',
+             'name': 'Sergio Pérez',
              'number': 11,
              'country': 'MX'
          }]
      }
     ,
     {'team': 'Ferrari',
+     'country': 'IT',
      'drivers': [
          {
              'name': 'Carlos Sainz Jr',
@@ -42,6 +45,7 @@ TEAMS_2022 = [
      ]
      },
     {'team': 'McLaren',
+     'country': 'UK',
      'drivers': [
          {
              'name': 'Lando Norris',
@@ -56,6 +60,7 @@ TEAMS_2022 = [
      ]
      },
     {'team': 'Alpine',
+     'country': 'FR',
      'drivers': [
          {
              'name': 'Fernando Alonso',
@@ -70,6 +75,7 @@ TEAMS_2022 = [
      ]
      },
     {'team': 'AlphaTauri',
+     'country': 'IT',
      'drivers': [
          {
              'name': 'Pierre Gasly',
@@ -84,6 +90,7 @@ TEAMS_2022 = [
      ]
      },
     {'team': 'Aston Martin',
+     'country': 'UK',
      'drivers': [
          {
              'name': 'Lance Stroll',
@@ -103,6 +110,7 @@ TEAMS_2022 = [
      ]
      },
     {'team': 'Williams',
+     'country': 'UK',
      'drivers': [
          {
              'name': 'Nicholas Latifi',
@@ -122,6 +130,7 @@ TEAMS_2022 = [
      ]
      },
     {'team': 'Alfa Romeo',
+     'country': 'CH',
      'drivers': [
          {
              'name': 'Zhou Guanyu',
@@ -136,6 +145,7 @@ TEAMS_2022 = [
      ]
      },
     {'team': 'Haas',
+     'country': 'US',
      'drivers': [
          {
              'name': 'Kevin Magnussen',
@@ -175,6 +185,7 @@ AUSTRALIA_2022 = {
 EMILIA_ROMAGNA_2022 = {
     'round': 4,
     'gran_prix': 'Emilia Romagna',
+    'sprint': [1, 16, 11, 55, 4, 3, 77, 20, 14, 47, 63, 22, 5, 44, 18, 31, 10, 23, 6, 24],
     'result': [1, 16, 55, 11, 63, 31, 4, 10, 20, 44, 24, 27, 18, 23, 77, 14, 3, 6, 22, 47],
     'fastest_lap': 1
 }
@@ -224,6 +235,7 @@ GREAT_BRITAIN_2022 = {
 AUSTRIA_2022 = {
     'round': 7,
     'gran_prix': 'Austrian',
+    'sprint': [1, 16, 55, 63, 11, 31, 20, 44, 47, 77, 4, 3, 18, 24, 10, 23, 22, 6, 5, 14],
     'result': [16, 1, 44, 63, 31, 47, 4, 20, 3, 14, 77, 23, 18, 24, 10, 22, 5, 55, 6, 11],
     'fastest_lap': 1
 }
@@ -294,6 +306,7 @@ MEXICO_2022 = {
 BRAZIL_2022 = {
     'round': 7,
     'gran_prix': 'São Paulo',
+    'sprint': [63, 55, 44, 1, 11, 16, 4, 20, 5, 10, 3, 47, 24, 77, 22, 18, 31, 14, 6, 23],
     'result': [63, 44, 55, 16, 14, 1, 11, 31, 77, 18, 5, 24, 47, 10, 23, 6, 22, 4, 20, 3],
     'fastest_lap': 63
 }
@@ -306,6 +319,7 @@ ABU_DHABI_2022 = {
 }
 
 SEASON_FULL_DATA_2022 = {
+    'year': 2022,
     'race_count': 22,
     'teams': TEAMS_2022,
     'race_results': [
