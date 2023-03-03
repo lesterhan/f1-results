@@ -4,12 +4,12 @@ TEAMS_2022 = [
      'drivers': [
          {
              'name': 'Lewis Hamilton',
-             'career number': 44,
+             'number': 44,
              'country': 'UK'
          },
          {
              'name': 'George Russell',
-             'career number': 63,
+             'number': 63,
              'country': 'UK'
          }
      ]
@@ -19,7 +19,7 @@ TEAMS_2022 = [
      'drivers': [
          {
              'name': 'Max Verstappen',
-             'career number': 1,
+             'number': 1,
              'country': 'NL'
          },
          {
@@ -34,7 +34,7 @@ TEAMS_2022 = [
      'drivers': [
          {
              'name': 'Carlos Sainz Jr',
-             'career number': 55,
+             'number': 55,
              'country': 'ES'
          },
          {
@@ -49,7 +49,7 @@ TEAMS_2022 = [
      'drivers': [
          {
              'name': 'Lando Norris',
-             'career number': 4,
+             'number': 4,
              'country': 'UK'
          },
          {
@@ -64,7 +64,7 @@ TEAMS_2022 = [
      'drivers': [
          {
              'name': 'Fernando Alonso',
-             'career number': 14,
+             'number': 14,
              'country': 'ES'
          },
          {
@@ -79,7 +79,7 @@ TEAMS_2022 = [
      'drivers': [
          {
              'name': 'Pierre Gasly',
-             'career number': 10,
+             'number': 10,
              'country': 'FR'
          },
          {
@@ -94,7 +94,7 @@ TEAMS_2022 = [
      'drivers': [
          {
              'name': 'Lance Stroll',
-             'career number': 18,
+             'number': 18,
              'country': 'CA'
          },
          {
@@ -114,7 +114,7 @@ TEAMS_2022 = [
      'drivers': [
          {
              'name': 'Nicholas Latifi',
-             'career number': 6,
+             'number': 6,
              'country': 'CA'
          },
          {
@@ -134,7 +134,7 @@ TEAMS_2022 = [
      'drivers': [
          {
              'name': 'Zhou Guanyu',
-             'career number': 24,
+             'number': 24,
              'country': 'CN'
          },
          {
@@ -149,7 +149,7 @@ TEAMS_2022 = [
      'drivers': [
          {
              'name': 'Kevin Magnussen',
-             'career number': 20,
+             'number': 20,
              'country': 'DK'
          },
          {
