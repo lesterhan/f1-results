@@ -349,7 +349,7 @@ SEASON_FULL_DATA_2022 = {
 }
 
 PLACE_TO_POINTS_MAPPING = {
-    0:	25,
+    0: 25,
     1: 18,
     2: 15,
     3: 12,

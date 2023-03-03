@@ -1,6 +1,10 @@
 from unittest import TestCase
 
-from f1_results.f1_results import formula_1_race_results, assign_points_for_race
+from f1_results.f1_results import (
+    formula_1_race_results,
+    assign_points_for_race,
+    get_points_for_finishing_position
+)
 from f1_results.fixtures import SEASON_FULL_DATA_2022, UNITED_STATES_2022
 
 
@@ -12,10 +16,10 @@ class TestF1Results(TestCase):
             ("""
             In 2022, after 22 races, the Red Bull driver Max Verstappen won the Formula One World Driver's Championship with 454 points.
             Ferrari driver Charles LeClerc came in second with 308 points. And Red Bull driver Sergio Pérez took home 3rd with 305 points.
-            
+
             Red Bull won the World Constructor's Championship with a total of 759 from both drivers.
             Ferrari was second with 554 points and Mercedes was third with 515 points.
-            
+
             Here's a detailed summary of the Driver's Championship:
             1. (Netherlands) Max Verstappen: 454 Points
             2. (Monaco) Charles Leclerc: 308 Points
@@ -39,7 +43,7 @@ class TestF1Results(TestCase):
             20. (Canada) Nicholas Latifi: 2 Points
             21. (Netherlands) Nyck de Vries: 2 Points
             22. (Germany) Nico Hülkenberg: 0 Points
-            
+
             Here's a detailed summary of the Constructor's Championship:
             1. (Austria) Red Bull Racing: 759 Points
             2. (Italy) Ferrari: 554 Points
@@ -55,3 +59,12 @@ class TestF1Results(TestCase):
 
     def test_assign_points_for_race(self):
        points_for_race = assign_points_for_race(UNITED_STATES_2022)
+
+
+class TestGetPointsForFinishingPosition(TestCase):
+
+    def test_get_points_for_top_ten(self):
+        self.assertEqual(get_points_for_finishing_position(1), 18)
+
+    def test_get_points_for_outside_top_ten(self):
+        self.assertEqual(get_points_for_finishing_position(11), 0)
