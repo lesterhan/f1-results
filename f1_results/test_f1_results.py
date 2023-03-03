@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from f1_results.f1_results import formula_1_race_results
-from f1_results.fixtures import SEASON_FULL_DATA_2022
+from f1_results import formula_1_race_results
+from fixtures import SEASON_FULL_DATA_2022
 
 
 class TestF1Results(TestCase):

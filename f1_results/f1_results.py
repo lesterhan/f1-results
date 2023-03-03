@@ -1,6 +1,6 @@
 from typing import Mapping
 
-from f1_results.fixtures import SEASON_FULL_DATA_2022
+from fixtures import SEASON_FULL_DATA_2022
 
 
 def formula_1_race_results(season_data: Mapping) -> str:
