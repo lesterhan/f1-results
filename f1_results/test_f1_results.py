@@ -62,7 +62,8 @@ class TestAssignPointsForRace(TestCase):
 
     def test_assign_points_for_race(self):
         driver_dict = create_driver_dict(TEAMS_2022)
-        points_for_race = assign_points_for_race(UNITED_STATES_2022, driver_dict)
+        points_for_race = assign_points_for_race(
+            UNITED_STATES_2022, driver_dict)
         expected_points_for_race = {
             1: 25,
             44: 18,
@@ -97,6 +98,11 @@ class TestGetPointsForFinishingPosition(TestCase):
 
     def test_get_points_for_outside_top_ten(self):
         self.assertEqual(get_points_for_finishing_position(11), 0)
+
+
+class TestAssignSeasonResults(TestCase):
+    def test_assign_season_results(self):
+        pass
 
 
 class TestCreateDriverDict(TestCase):
