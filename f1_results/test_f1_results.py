@@ -1,11 +1,11 @@
 from unittest import TestCase
 
-from f1_results.f1_results import (
+from f1_results import (
     formula_1_race_results,
     assign_points_for_race,
     get_points_for_finishing_position
 )
-from f1_results.fixtures import SEASON_FULL_DATA_2022, UNITED_STATES_2022
+from fixtures import SEASON_FULL_DATA_2022, UNITED_STATES_2022
 
 
 class TestF1Results(TestCase):
@@ -62,7 +62,29 @@ class TestAssignPointsForRace(TestCase):
 
     def test_assign_points_for_race(self):
        points_for_race = assign_points_for_race(UNITED_STATES_2022)
-       self.assertEqual(points_for_race, {})
+       expected_points_for_race = {
+          1: 25,
+          44: 18,
+          16: 15,
+          11: 12,
+          63: 10,
+          4: 8,
+          14: 6,
+          5: 4,
+          20: 2,
+          22: 1,
+          31: 0,
+          24: 0,
+          23: 0,
+          10: 0,
+          47: 0,
+          3: 0,
+          6: 0,
+          18: 0,
+          77: 0,
+          55: 0,
+       }
+       self.assertEqual(points_for_race, expected_points_for_race)
 
 class TestGetPointsForFinishingPosition(TestCase):
 
