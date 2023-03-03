@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from f1_results.f1_results import formula_1_race_results
-from f1_results.fixtures import SEASON_FULL_DATA_2022
+from f1_results.f1_results import formula_1_race_results, assign_points_for_race
+from f1_results.fixtures import SEASON_FULL_DATA_2022, UNITED_STATES_2022
 
 
 class TestF1Results(TestCase):
@@ -53,3 +53,5 @@ class TestF1Results(TestCase):
             10. (United Kingdom) Williams-Mercedes: 8 Points""")
         )
 
+    def test_assign_points_for_race(self):
+       points_for_race = assign_points_for_race(UNITED_STATES_2022)
